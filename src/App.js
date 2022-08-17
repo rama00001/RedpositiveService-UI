@@ -224,7 +224,7 @@ function App() {
 
   // Fetch Users
   const fetchUsers = async () => {
-    setLoading(true);
+    // setLoading(true);
 
     // try {
     //   await getUsers().then(({ data }) => {
