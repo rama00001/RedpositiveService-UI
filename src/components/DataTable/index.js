@@ -12,7 +12,32 @@ const DataTable = props => {
    const [users, setUsers] = useState(props.users);
 
     useEffect(() => {
-     if(props.users.length<=0){
+  //    if(props.users.length<=0){
+  //   setUsers([{
+  //     name:"test",
+  //     phone_number:"9999999999",
+  //     email:"test@gmail.com",
+  //     hobbies:"cricket"
+  //   },
+  //   {
+  //     name:"test2",
+  //     phone_number:"6999999999",
+  //     email:"test2@gmail.com",
+  //     hobbies:"cricket"
+  //   },
+  //   {
+  //     name:"test3",
+  //     phone_number:"7999999999",
+  //     email:"test3@gmail.com",
+  //     hobbies:"footbal"
+  //   },
+  //   {
+  //     name:"test4",
+  //     phone_number:"8999999999",
+  //     email:"test4@gmail.com",
+  //     hobbies:"chess"
+  //   }
+  // ])
     setUsers([{
       name:"test",
       phone_number:"9999999999",
@@ -38,7 +63,6 @@ const DataTable = props => {
       hobbies:"chess"
     }
   ])
-  }
   }, []);
 
 
