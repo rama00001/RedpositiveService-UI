@@ -226,21 +226,21 @@ function App() {
   const fetchUsers = async () => {
     setLoading(true);
 
-    try {
-      await getUsers().then(({ data }) => {
-        setSavedUsers(data.data);
-        dispatch({ type: "SET_USERS", data: data.data });
-      });
-    } catch (err) {
-      MySwal.fire({
-        icon: "error",
-        title: "Failed to fetch users."
-      });
-    } finally {
-      setTimeout(() => {
-        setLoading(false);
-      }, 500);
-    }
+    // try {
+    //   await getUsers().then(({ data }) => {
+    //     setSavedUsers(data.data);
+    //     dispatch({ type: "SET_USERS", data: data.data });
+    //   });
+    // } catch (err) {
+    //   MySwal.fire({
+    //     icon: "error",
+    //     title: "Failed to fetch users."
+    //   });
+    // } finally {
+    //   setTimeout(() => {
+    //     setLoading(false);
+    //   }, 500);
+    // }
   };
 
   useEffect(() => {
